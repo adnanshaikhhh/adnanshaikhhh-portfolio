@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0D0D0D" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7A6230"/>
+      <stop offset="50%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#7A6230"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.15 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#030303"/>
+  <rect width="1200" height="630" fill="url(#grain)" filter="url(#grain)"/>
+
+  <!-- corner brackets -->
+  <g stroke="#7A6230" stroke-width="2" fill="none">
+    <path d="M 40 40 L 40 80 M 40 40 L 80 40"/>
+    <path d="M 1160 40 L 1160 80 M 1160 40 L 1120 40"/>
+    <path d="M 40 590 L 40 550 M 40 590 L 80 590"/>
+    <path d="M 1160 590 L 1160 550 M 1160 590 L 1120 590"/>
+  </g>
+
+  <!-- top label -->
+  <text x="100" y="100" font-family="'JetBrains Mono', monospace" font-size="14" letter-spacing="4" fill="#6B6B5E">// ADNAN.SYS</text>
+  <text x="1100" y="100" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="14" letter-spacing="4" fill="#6B6B5E">FILE: SHAIKHHH-A · 2026</text>
+
+  <!-- divider -->
+  <line x1="100" y1="125" x2="1100" y2="125" stroke="#1A1A1A" stroke-width="1"/>
+  <line x1="100" y1="125" x2="320" y2="125" stroke="#C9A84C" stroke-width="1"/>
+
+  <!-- main wordmark -->
+  <text x="600" y="330" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-weight="300" font-size="120" fill="#F5F5F0" letter-spacing="-2">BUILDS IN THE DARK.</text>
+
+  <!-- subtagline -->
+  <text x="600" y="395" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="300" font-size="28" fill="#6B6B5E">Some frequencies only become audible after the noise is gone.</text>
+
+  <!-- divider -->
+  <line x1="100" y1="465" x2="1100" y2="465" stroke="#1A1A1A" stroke-width="1"/>
+  <line x1="880" y1="465" x2="1100" y2="465" stroke="#C9A84C" stroke-width="1"/>
+
+  <!-- bottom label -->
+  <text x="100" y="510" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="3" fill="#C9A84C">● STATUS · OPERATIONAL</text>
+  <text x="1100" y="510" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="3" fill="#6B6B5E">GITHUB.COM/ADNANSHAIKHHH</text>
+
+  <!-- tagline bottom -->
+  <text x="600" y="555" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="300" font-size="20" fill="#6B6B5E">What is built in silence cannot be unbuilt.</text>
+
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+</svg>
